@@ -7,6 +7,8 @@
         justify-content: space-between;
         @media (max-width: size(lg)){
             &{
+                padding-left: 0;
+                padding-right: 0;
                 flex-direction: column;
             }
         }
@@ -34,6 +36,8 @@
         justify-content: flex-end;
         display: flex;
         align-items: center;
+        z-index: 999;
+        background-color: white;
         @media(max-width:size(lg)){
             &{
                 display: none;
