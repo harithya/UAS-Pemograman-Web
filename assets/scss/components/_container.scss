@@ -1,0 +1,22 @@
+.container{
+    padding-right: 100px;
+    padding-left: 100px;
+    position: relative;
+
+    @media (max-width: size(lg)) {
+        &{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+
+    @media (max-width: size(md)) {
+        &{
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+
+

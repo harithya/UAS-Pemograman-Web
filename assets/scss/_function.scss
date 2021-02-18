@@ -1,3 +1,7 @@
 @function color($key) {
     @return map-get($colors, $key);
 }
+
+@function size($key) {
+    @return map-get($grid-breakpoints, $key);
+}
