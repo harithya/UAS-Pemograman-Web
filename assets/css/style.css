@@ -43,10 +43,44 @@ a {
   position: relative;
 }
 
+h3 {
+  font-size: 2.3em;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  h3 {
+    font-size: 2em;
+  }
+}
+
+.section-sub {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #6777ef;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 992px) {
+  .section-sub {
+    font-size: 1.1em;
+  }
+}
+
+section {
+  margin-top: 100px;
+}
+
+p {
+  line-height: 20px;
+}
+
 .container {
+  position: relative;
   padding-right: 100px;
   padding-left: 100px;
-  position: relative;
 }
 
 @media (max-width: 992px) {
@@ -146,7 +180,7 @@ a {
   text-decoration: none;
   color: #1a1a1a;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   margin-left: 50px;
 }
 
@@ -264,5 +298,93 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.media-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 992px) {
+  .media-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.media-grid .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-grid .media .media-icon {
+  display: inline-block;
+  background-color: rgba(103, 119, 239, 0.1);
+  padding: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .media-grid .media .media-icon {
+    padding: 30px;
+  }
+}
+
+.media-grid .media .media-icon i {
+  font-size: 35px;
+  color: #6777ef;
+}
+
+@media (max-width: 992px) {
+  .media-grid .media .media-icon i {
+    font-size: 30px;
+  }
+}
+
+.media-grid .media .media-body {
+  width: auto;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.media-grid .media .media-body h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .media-grid .media .media-body h4 {
+    font-size: 18px;
+  }
+}
+
+.media-grid .media .media-body p {
+  font-size: 15px;
+  color: #6c757d;
+}
+
+@media (max-width: 992px) {
+  .media-grid .media .media-body p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
