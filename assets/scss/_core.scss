@@ -61,5 +61,17 @@ section {
 }
 
 p{
-    line-height: 20px;
+    line-height: 25px;
+    color: lighten(color(font), 20);
+}
+
+h4{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+@media(max-width: size(lg)){
+    .program{
+        margin-top: 40px !important;
+    }
 }

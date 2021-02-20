@@ -8,3 +8,16 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+
+@mixin  flex {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}

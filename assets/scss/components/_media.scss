@@ -9,13 +9,27 @@
     .media{
         display: flex;
         margin-top: 50px;
+        margin-right: 20px;
         width: auto;
         align-items: center;
+        @media(max-width: size(lg)){
+            &{
+                margin-right: 0px;
+                margin-top: 25px;
+            }
+        }
         .media-icon{
             display: inline-block;
             background-color: color('lightblue');
             padding: 40px;
             border-radius: 50%;
+            transition: .3s;
+            &:hover{
+                background-color: color(primary);
+                i{
+                    color: color('white');
+                }
+            }
             @media (max-width: size(lg)){
                 padding: 30px;
             }

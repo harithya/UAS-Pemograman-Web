@@ -1,7 +1,14 @@
 .container{
     position: relative;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 180px;
+    padding-left: 180px;
+
+    @media(max-width:size(xl)) {
+        &{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+    }
 
     @media (max-width: size(lg)) {
         &{
