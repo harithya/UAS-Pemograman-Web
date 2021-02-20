@@ -29,4 +29,17 @@ $(document).ready(function () {
 
     renderService()
 
+    /**
+     * Jika screen di scrool
+     */
+    $(window).on("scroll", function (val) {
+        let scrollAmount = window.scrollY;
+        // jika nilai scrollAmount top 0
+        if (scrollAmount != 0) {
+            $(".navbar").css('box-shadow', '0 0 8px 0 rgba(0,0,0,0.2)')
+        } else {
+            $('.navbar').css('box-shadow', 'none');
+        }
+    });
+
 })
