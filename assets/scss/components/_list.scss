@@ -1,0 +1,25 @@
+.list{
+    margin-top: 50px;
+    .list-item {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        span{
+            display: inline-flex;
+            background-color: color('lightblue');
+            color: color('primary');
+            min-width: 40px;
+            height: 40px;
+            @include to-center;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        div{
+            margin-left: 20px;
+            width: 100%;
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
+}

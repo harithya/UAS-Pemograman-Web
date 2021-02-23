@@ -42,4 +42,20 @@ $(document).ready(function () {
         }
     });
 
+
+    const renderProgram = () => {
+        let html = ``
+        for (let i = 0; i < programs.length; i++) {
+            html += `<div class="list-item">
+                    <span>${i + 1}</span>
+                    <div>
+                        <h5>${programs[i].title}</h5>
+                        <p>${programs[i].description}</p>
+                    </div>
+                </div>`
+        }
+        $(".list").html(html)
+    }
+    renderProgram()
+
 })

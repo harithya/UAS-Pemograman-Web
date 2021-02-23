@@ -70,8 +70,27 @@ h4{
     font-weight: 400;
 }
 
+h5{
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
 @media(max-width: size(lg)){
     .program{
         margin-top: 40px !important;
+        img {
+            display: none;
+        }
+    }
+}
+
+.img-about{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    @media (max-width: size(lg)) {
+        height: 350px;
     }
 }

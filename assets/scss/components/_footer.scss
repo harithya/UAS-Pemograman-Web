@@ -1,0 +1,15 @@
+footer{
+    background-color: color(footer);
+    padding: 30px;
+    margin-top: 100px;
+    @include to-center;
+    p{
+        color: color('white');
+    }
+    i{
+        color: color('white');
+        margin-top: 2px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+}

@@ -29,5 +29,11 @@ const services = [
         title: 'Perijinan',
         description: 'kami selalu melakukan yang terbaik dan menggunakan teknologi yang paling tepat.'
     },
+]
 
+const programs = [
+    { title: 'PRUKADES', description: 'prioritas kementerian desa yang memiliki kepanjangan yaitu Produk Unggulan Kawasan Desa.' },
+    { title: 'EMBUNG DESA', description: 'Memunculkan kemandirian pangan, memunculkan potensi wisata baru, Menyediakan ketersediaan air, sumber protein masyarakat.' },
+    { title: 'BUMDESA', description: 'BUM Desa bertujuan untuk mendorong kemandirian desa serta memperkuat usaha-usaha yang ada di desa.' },
+    { title: 'SORGA DESA', description: 'Program ini adalah program yang bertujuan untuk membangun sarana prasarana olahraga desa agar pemuda desa bisa melakukan kegiatan yang bermanfaat.' }
 ]

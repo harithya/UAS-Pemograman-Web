@@ -3,6 +3,9 @@
     height: 70px;
     position: fixed;
     background-color: color('white');
+    .active{
+        color: color(primary) !important;
+    }
     z-index:9999;
     .container{
         display: flex;
