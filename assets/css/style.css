@@ -763,38 +763,41 @@ footer i {
 .staff-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .staff-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .staff-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .staff-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .staff-list .staff-item {
+  margin-bottom: 25px;
+}
+
+.staff-list .staff-item .staff-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.staff-list .staff-item img {
-  margin-top: 20px;
-  width: 120px;
-  height: 120px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-
-.staff-list .staff-item div {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -803,16 +806,37 @@ footer i {
           align-items: center;
 }
 
-.staff-list .staff-item div h5 {
-  width: 100%;
+.staff-list .staff-item .staff-image img {
+  display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 20px;
+  min-width: 150px !important;
+  height: 150px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
-.staff-list .staff-item div label {
-  width: 100%;
-  margin-top: 5px;
+@media (max-width: 768px) {
+  .staff-list .staff-item .staff-image img {
+    min-width: 85px !important;
+    height: 85px !important;
+  }
 }
 
-.staff-list .staff-item div p {
-  border-left: 1px solid #e6e6e6;
+.staff-list .staff-item .staff-description {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.staff-list .staff-item .staff-description h5 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .staff-list .staff-item .staff-description h5 {
+    font-size: 1.1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

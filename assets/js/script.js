@@ -58,4 +58,22 @@ $(document).ready(function () {
     }
     renderProgram()
 
+
+    const renderStaff = () => {
+        let html = ''
+        for (let i = 0; i < staffs.length; i++) {
+            html += `<div class="staff-item">
+                <div class="staff-image">
+                    <img src="${staffs[i].photo}">
+                </div>
+                <div class="staff-description">
+                    <h5>${staffs[i].name}</h5>
+                    <label class="text-muted">${staffs[i].role}</label>
+                </div>
+            </div>`
+        }
+        $(".staff-list").html(html)
+    }
+    renderStaff();
+
 })
