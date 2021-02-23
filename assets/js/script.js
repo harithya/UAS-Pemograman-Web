@@ -76,4 +76,20 @@ $(document).ready(function () {
     }
     renderStaff();
 
+
+    const renderNews = () => {
+        let html = ``
+        for (let i = 0; i < news.length; i++) {
+            html += `<a href="detail.html/${news[i].id}" class="news-item">
+                <img src="${news[i].thumbnail}">
+                <div class="news-content">
+                    <h5>${news[i].title}</h5>
+                    <p>${i + 1} jam yang lalu</p>
+                </div>
+            </a>`
+        }
+        $(".news-list").html(html)
+    }
+    renderNews();
+
 })
