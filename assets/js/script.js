@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    const url = new URL(window.location.href);
     let navbarActive = false
     $(".navbar-toggler").on('click', function () {
         if (navbarActive) {
@@ -80,7 +81,7 @@ $(document).ready(function () {
     const renderNews = () => {
         let html = ``
         for (let i = 0; i < news.length; i++) {
-            html += `<a href="detail.html/${news[i].id}" class="news-item">
+            html += `<a href="detail.html?id=${news[i].id}" class="news-item">
                 <img src="${news[i].thumbnail}">
                 <div class="news-content">
                     <h5>${news[i].title}</h5>
@@ -92,4 +93,29 @@ $(document).ready(function () {
     }
     renderNews();
 
+
+    /**
+     * Mendapatkan data detail berita
+     */
+    const getDetailNews = () => {
+        const id = url.searchParams.get('id');
+        let results = [];
+        for (let i = 0; i < news.length; i++) {
+            //jika news id dan paramter sama maka di masukan ke results
+            if (news[i].id == id) {
+                results = news[i];
+            }
+        }
+        return results;
+    }
+
+    const renderNewsDetail = () => {
+        const news = getDetailNews();
+        console.log(news)
+        $(".title").text(news.title)
+        $(".thumbnail").attr('src', news.thumbnail)
+        $(".content").html(news.content)
+    }
+    renderNewsDetail();
 })
+

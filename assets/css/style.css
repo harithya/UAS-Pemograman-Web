@@ -767,6 +767,7 @@ footer i {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   overflow: auto;
   white-space: nowrap;
+  grid-gap: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -808,14 +809,11 @@ footer i {
 
 .staff-list .staff-item .staff-image img {
   display: block;
-  margin-left: 50%;
-  margin-right: 50%;
   margin-top: 20px;
-  min-width: 150px !important;
-  height: 150px !important;
+  width: 100%;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
@@ -899,5 +897,22 @@ footer i {
   .news .news-list .news-item p {
     font-size: 0.7em;
   }
+}
+
+.news .news-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+  grid-gap: 50px;
+}
+
+.news .news-grid .news-detail h2 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.news .news-grid .news-detail img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

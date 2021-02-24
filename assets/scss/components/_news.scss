@@ -38,4 +38,19 @@
             }
         }
     }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-gap: 50px;
+        .news-detail {
+            h2{
+                font-weight: 400;
+                font-size: 2em;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
