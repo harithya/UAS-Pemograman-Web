@@ -104,6 +104,7 @@ $(document).ready(function () {
             //jika news id dan paramter sama maka di masukan ke results
             if (news[i].id == id) {
                 results = news[i];
+                break;
             }
         }
         return results;
@@ -111,11 +112,28 @@ $(document).ready(function () {
 
     const renderNewsDetail = () => {
         const news = getDetailNews();
-        console.log(news)
         $(".title").text(news.title)
         $(".thumbnail").attr('src', news.thumbnail)
         $(".content").html(news.content)
     }
     renderNewsDetail();
+
+    const renderNewsSidebar = () => {
+        let html = ``
+        for (let i = 0; i < news.length; i++) {
+            html += `<a href="detail.html?id=${news[i].id}" class="news-sidebar-item">
+                <img src="${news[i].thumbnail}">
+                <div class="news-sidebar-content">
+                    <h6>${news[i].title}</h6>
+                    <span>
+                        <i class="ti ti-calendar"></i>
+                        ${12 + i + 1} Januari 2021
+                    </span>
+                </div>
+            </a>`
+        }
+        $(".news-sidebar-list").html(html)
+    }
+    renderNewsSidebar();
 })
 

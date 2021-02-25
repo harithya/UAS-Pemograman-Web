@@ -58,6 +58,9 @@ h3{
 
 section {
     margin-top: 100px;
+    @media(max-width:size(lg)){
+        margin-top: 50px;
+    }
 }
 
 p{
@@ -76,6 +79,14 @@ h5{
     font-weight: 400;
     margin-top: 0;
 }
+
+h6{
+    font-size: 1.05em;
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
 
 @media(max-width: size(lg)){
     .program{

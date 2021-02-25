@@ -73,6 +73,12 @@ section {
   margin-top: 100px;
 }
 
+@media (max-width: 992px) {
+  section {
+    margin-top: 50px;
+  }
+}
+
 p {
   line-height: 25px;
   color: #4d4d4d;
@@ -85,6 +91,13 @@ h4 {
 
 h5 {
   font-size: 1.3em;
+  margin-bottom: 0px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h6 {
+  font-size: 1.05em;
   margin-bottom: 0px;
   font-weight: 400;
   margin-top: 0;
@@ -457,12 +470,6 @@ h5 {
   margin-top: 200px;
 }
 
-@media (max-width: 992px) {
-  .section {
-    margin-top: 100px;
-  }
-}
-
 .section .section-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,6 +815,7 @@ footer i {
 }
 
 .staff-list .staff-item .staff-image img {
+  border-radius: 10px;
   display: block;
   margin-top: 20px;
   width: 100%;
@@ -902,9 +910,17 @@ footer i {
 .news .news-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 2fr;
-      grid-template-columns: 4fr 2fr;
-  grid-gap: 50px;
+  -ms-grid-columns: 4fr 2.2fr;
+      grid-template-columns: 4fr 2.2fr;
+  grid-gap: 80px;
+}
+
+@media (max-width: 992px) {
+  .news .news-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
 }
 
 .news .news-grid .news-detail h2 {
@@ -914,5 +930,44 @@ footer i {
 
 .news .news-grid .news-detail img {
   width: 100%;
+  border-radius: 10px;
+}
+
+.news .news-grid .news-sidebar {
+  margin-top: 25px;
+}
+
+.news .news-grid .news-sidebar h5 {
+  font-size: 1.7em;
+}
+
+.news .news-grid .news-sidebar .news-sidebar-item {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news .news-grid .news-sidebar .news-sidebar-item h6 {
+  margin-bottom: 13px;
+}
+
+.news .news-grid .news-sidebar .news-sidebar-item img {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news .news-grid .news-sidebar .news-sidebar-item .news-sidebar-content {
+  margin-left: 20px;
+}
+
+.news .news-grid .news-sidebar .news-sidebar-item span {
+  color: #6c757d;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

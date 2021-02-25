@@ -1,8 +1,5 @@
 .section {
     margin-top: 200px;
-    @media(max-width:size(lg)){
-        margin-top: 100px;
-    }
     .section-body{
         display: flex;
         justify-content: space-between;

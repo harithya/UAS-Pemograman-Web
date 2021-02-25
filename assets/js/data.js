@@ -54,7 +54,7 @@ const news = [
     {
         id: 1,
         title: 'Survei Mata Air Desa Manduang Bersama Bapak Bupati Klungkung',
-        thumbnail: 'https://manduang.desa.id/desa/upload/artikel/kecil_1607917888_PicsArt_12-14-11.26.01.jpg',
+        thumbnail: 'https://www.nusabali.com/article_images/86286/bupati-suwirta-tinjau-mata-air-di-manduang-800-2020-12-14-125729_0.jpg',
         content: `Air adalah sumber kehidupan bagi manusia, serta semua makhluk hidup di dunia. Dalam sumbernya, air ini dapat ditemukan melalui adanya sumber mata air. Mata air merupakan salah satu keajaiban dari alam. Air yang keluar dari mata air adalah air yang kaya dengan banyak mineral yang bermanfaat untuk tubuh. Daerah pegunungan adalah tempat yang banyak terdapat sumber mata air.
         <br><br>
         Desa Manduang kaya dengan sumber mata air yang masih terjaga keberadaannya. Sumber mata air ini baru beberapa yang bisa dimanfaatkan oleh penduduk desa, dikarenakan akses menuju sumber mata air yang tidak semua dapat dijangkau dengan mudah. Pada kesempatan ini, Bapak Bupati Klungkung beserta jajarannya melakukan kunjungan ke Desa Manduang untuk melakukan survei mata air sesuai dengan surat yang diajukan oleh Pemerintah Desa Manduang. 
