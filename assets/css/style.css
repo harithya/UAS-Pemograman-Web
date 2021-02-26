@@ -1007,4 +1007,24 @@ footer i {
           box-shadow: none;
   background-color: #2239e8;
 }
+
+.gallery {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 1em;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */

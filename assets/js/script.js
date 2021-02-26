@@ -135,5 +135,16 @@ $(document).ready(function () {
         $(".news-sidebar-list").html(html)
     }
     renderNewsSidebar();
+
+
+    const renderImage = () => {
+        for (let i = 1; i < 10; i++) {
+            $(".gallery").append(`<div>
+                    <img src="./assets/img/gallery/${i}.jpg">
+                </div>
+                `)
+        }
+    }
+    renderImage();
 })
 
