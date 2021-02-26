@@ -6,8 +6,10 @@
         margin-bottom: 15px;
     }
     .form-control {
+        display: block;
         width: 100%;
-        padding: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
         font-size: 14px;
         border-radius: 5px;
         border: 1px solid color(border-input);

@@ -971,10 +971,6 @@ footer i {
   font-size: 12px;
 }
 
-.comment {
-  margin-top: 100px;
-}
-
 .form-group {
   margin-bottom: 20px;
 }
@@ -986,10 +982,29 @@ footer i {
 }
 
 .form-group .form-control {
+  display: block;
   width: 100%;
-  padding: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid #ced4da;
+}
+
+.button {
+  padding: 13px;
+  padding-right: 35px;
+  padding-left: 35px;
+  border: 1px solid #6777ef;
+  background-color: #6777ef;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #2239e8;
 }
 /*# sourceMappingURL=style.css.map */

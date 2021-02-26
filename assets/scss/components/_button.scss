@@ -1,0 +1,14 @@
+.button {
+    padding: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border: 1px solid color(primary);
+    background-color: color(primary);
+    color: color('white');
+    border-radius: 2px;
+    cursor: pointer;
+    &:active{
+        box-shadow: none;
+        background-color: darken(color(primary),15%);
+    }
+}
