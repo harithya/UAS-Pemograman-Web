@@ -1,17 +1,15 @@
-.form-group {
+.form-control {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0px;
+    border-radius: 3px;
+    padding-left: 20px;
+    outline: none;
     margin-bottom: 20px;
-    label{
-        display: block;
-        font-size: 15px;
-        margin-bottom: 15px;
-    }
-    .form-control {
-        display: block;
-        width: 100%;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        font-size: 14px;
-        border-radius: 5px;
-        border: 1px solid color(border-input);
-    }
+    border: 1px solid color(border-input);
 }

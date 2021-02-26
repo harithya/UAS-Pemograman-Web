@@ -31,8 +31,8 @@
                 height: 250px;
                 object-fit: cover;
                 @media(max-width:size(md)) {
-                    min-width: 85px !important;
-                    height: 85px !important;
+                    min-width: 100%  !important;
+                    height: 190px !important;
                 }
             }
         }
